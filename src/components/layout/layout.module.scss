@@ -1,0 +1,84 @@
+$headerHeight: 80px;
+$mainDarkColor: #373737;
+
+.header {
+    height: $headerHeight;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    opacity: 0.9;
+    padding: 0;
+
+    li {
+        display: inline-block;
+    }
+
+    .logoWrapper {
+        width: 96px;
+        height: 80px;
+        text-align: center;
+        display: inline-block;
+
+        svg {
+            margin-top: 22px;
+        }
+    }
+
+    .headerDetail {
+        color: white;
+        margin-top: 16px;
+
+        .detailIcon {
+            font-size: 28px;
+        }
+
+        .detailDropdown {
+            margin-left: 20px;
+            //display: block;
+            margin-top: -8px;
+        }
+
+        svg:first-child {
+            margin-right: 20px;
+        }
+    }
+}
+
+.content {
+    margin-top: $headerHeight;
+}
+
+.sider {
+    .wrapper {
+        color: white;
+        margin-top: $headerHeight;
+        background-color: $mainDarkColor;
+
+        li {
+            height: 96px;
+            text-align: center;
+            padding: 0px !important;
+            margin: 0px !important;
+        }
+
+        svg {
+            width: 30px;
+            height: 32px;
+            position: absolute;
+            left: 30px;
+            top: 20px;
+        }
+
+        .menuText {
+            margin-top: 50px;
+            color: #9B9B9B;
+            font-family: San Francisco;
+            font-size: 12px;
+        }
+
+        :global(.ant-menu-item-selected) {
+            background-color: #373737 !important;
+        }
+    }
+}
